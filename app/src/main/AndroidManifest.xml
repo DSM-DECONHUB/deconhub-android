@@ -22,7 +22,14 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity"
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FindPasswordActivity"
             android:exported="false" />
     </application>
 
