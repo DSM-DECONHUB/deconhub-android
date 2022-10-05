@@ -23,13 +23,16 @@
         </activity>
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".loginsign.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".SignActivity"
+            android:name=".loginsign.SignActivity"
             android:exported="false" />
         <activity
-            android:name=".FindPasswordActivity"
+            android:name=".loginsign.FindPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginsign.ConfirmPasswordActivity"
             android:exported="false" />
     </application>
 
