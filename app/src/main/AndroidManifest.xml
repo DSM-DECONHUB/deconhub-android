@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity
+       <activity
             android:name=".loginsign.LoginActivity"
             android:exported="false" />
         <activity
@@ -33,6 +33,12 @@
             android:exported="false" />
         <activity
             android:name=".loginsign.ConfirmPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginsign.AuthenticationNumberActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginsign.SetNewPasswordActivity"
             android:exported="false" />
     </application>
 
