@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity
+       <activity
             android:name=".loginsign.LoginActivity"
             android:exported="false" />
         <activity
