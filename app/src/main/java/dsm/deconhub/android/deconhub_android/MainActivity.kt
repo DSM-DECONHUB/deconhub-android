@@ -4,12 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.android.material.navigation.NavigationBarView
 import dsm.deconhub.android.deconhub_android.chat.ChatPageFragment
 import dsm.deconhub.android.deconhub_android.home.HomePageFragment
 import dsm.deconhub.android.deconhub_android.mypage.MyPageFragment
 import dsm.deconhub.android.deconhub_android.study.StudyPageFragment
 
-class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListener {
 
     lateinit var bottomNavigationView : BottomNavigationView
 
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         setContentView(R.layout.activity_main)
 
         bottomNavigationView = findViewById(R.id.bottom_navigation)
-        bottomNavigationView.setOnNavigationItemSelectedListener(this)
+        bottomNavigationView.setOnItemSelectedListener(this)
 
         //첫 프래그먼트 화면은 home fragment로
         bottomNavigationView.selectedItemId = R.id.homeFragment
