@@ -5,16 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import dsm.deconhub.android.deconhub_android.databinding.FragmentHomePageBinding
+import dsm.deconhub.android.deconhub_android.databinding.FragmentStudyPageBinding
 
 class StudyPageFragment : Fragment() {
-    lateinit var binding: FragmentHomePageBinding
+    lateinit var binding: FragmentStudyPageBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentHomePageBinding.inflate(inflater, container, false)
+        binding = FragmentStudyPageBinding.inflate(inflater, container, false)
 
         return binding.root
     }

@@ -5,16 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import dsm.deconhub.android.deconhub_android.R
-import dsm.deconhub.android.deconhub_android.databinding.FragmentHomePageBinding
+import dsm.deconhub.android.deconhub_android.databinding.FragmentChatPageBinding
 
-class ChatPageFragment : Fragment() {lateinit var binding: FragmentHomePageBinding
+class ChatPageFragment : Fragment() {lateinit var binding: FragmentChatPageBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentHomePageBinding.inflate(inflater, container, false)
+        binding = FragmentChatPageBinding.inflate(inflater, container, false)
 
         return binding.root
     }
