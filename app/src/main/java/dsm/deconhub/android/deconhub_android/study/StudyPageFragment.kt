@@ -1,21 +1,31 @@
 package dsm.deconhub.android.deconhub_android.study
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import dsm.deconhub.android.deconhub_android.databinding.FragmentStudyPageBinding
+import android.widget.LinearLayout
+import dsm.deconhub.android.deconhub_android.R
 
 class StudyPageFragment : Fragment() {
-    lateinit var binding: FragmentStudyPageBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentStudyPageBinding.inflate(inflater, container, false)
+        val view = inflater.inflate(R.layout.fragment_study_page, null)
+        val studyDetailButton = view.findViewById<LinearLayout>(R.id.studyDetail)
 
-        return binding.root
+        studyDetailButton.setOnClickListener(
+            ({
+                val intent = Intent(context, StudyDetailActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
+            })
+        )
+        return view
     }
 }
