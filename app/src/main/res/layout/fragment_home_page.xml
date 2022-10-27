@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".home.HomePageFragment">
-
-    <!-- TODO: Update blank fragment layout -->
 
     <TextView
         android:id="@+id/Calendar_Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/pblack"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/psemibold"
         android:text="캘린더"
-        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,10 +23,10 @@
         android:id="@+id/Search_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58px"
-        android:layout_marginEnd="72dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="4dp"
         android:background="@null"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Bell_icon"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/search" />
 
@@ -35,9 +34,9 @@
         android:id="@+id/Bell_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58px"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="20dp"
-        android:background="@android:color/background_light"
+        android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bell" />
@@ -59,12 +58,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="대회"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
-        android:textSize="18dp"
         android:fontFamily="@font/pblack"
+        android:text="대회"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendar" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

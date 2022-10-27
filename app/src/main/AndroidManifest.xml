@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-       <activity
+        <activity
             android:name=".loginsign.LoginActivity"
             android:exported="false" />
         <activity
@@ -39,6 +39,9 @@
             android:exported="false" />
         <activity
             android:name=".loginsign.SetNewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.StudyDetailActivity"
             android:exported="false" />
     </application>
 
