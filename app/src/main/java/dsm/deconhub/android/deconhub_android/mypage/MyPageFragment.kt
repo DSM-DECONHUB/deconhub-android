@@ -6,27 +6,27 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import dsm.deconhub.android.deconhub_android.MainActivity
-import dsm.deconhub.android.deconhub_android.databinding.FragmentMyPageBinding
+import android.widget.Button
+import dsm.deconhub.android.deconhub_android.R
+import dsm.deconhub.android.deconhub_android.loginsign.LoginActivity
 
 
 class MyPageFragment : Fragment() {
-    lateinit var binding: FragmentMyPageBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMyPageBinding.inflate(inflater, container, false)
+        val view = inflater.inflate(R.layout.fragment_my_page, null)
+        val logoutButton = view.findViewById<Button>(R.id.logout)
 
-        binding.logout.setOnClickListener {
-        }
-        return binding.root
+        logoutButton.setOnClickListener(
+            ({
+                val intent = Intent(context, LoginActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
+            }))
+            return view
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-    }
-
 }
