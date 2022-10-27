@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="32.5dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/psemibold"
         android:text="스터디"
         android:textColor="@color/black"
@@ -24,7 +24,7 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20.5dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:background="@null"
         android:src="@drawable/search"
@@ -34,7 +34,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="88.5dp"
+        android:layout_marginTop="88dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +46,7 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/studyDetail"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:orientation="horizontal"
@@ -55,36 +56,62 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
+
                     android:layout_marginBottom="10dp"
                     android:layout_weight="0"
                     android:background="@color/contourcolor"
                     tools:src="@tools:sample/avatars" />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/textView1"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/psemibold"
-                        android:text="스터디 이름"
-                        android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:layout_weight="0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/psemibold"
+                            android:text="스터디 이름"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/user_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:fontFamily="@font/psemibold"
+                            android:text="13"
+                            android:textColor="@color/gray2"
+                            android:textSize="12sp" />
+                    </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
@@ -94,14 +121,13 @@
                         android:textSize="12sp" />
 
                     <TextView
-                        android:id="@+id/textView3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:fontFamily="@font/psemibold"
                         android:text="스터디 날짜"
                         android:textColor="@color/gray2"
-                        android:textSize="12sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
             </LinearLayout>
 
