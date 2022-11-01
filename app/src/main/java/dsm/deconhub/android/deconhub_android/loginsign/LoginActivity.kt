@@ -1,6 +1,7 @@
 package dsm.deconhub.android.deconhub_android.loginsign
 
 import android.content.Intent
+import android.icu.number.Scale.none
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -23,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
         val signButton = findViewById<TextView>(R.id.signButton)
         signButton.setOnClickListener {
             val sign = Intent(this, SignActivity::class.java)
+
             startActivity(sign)
         }
 

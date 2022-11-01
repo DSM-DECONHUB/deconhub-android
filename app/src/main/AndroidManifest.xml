@@ -43,6 +43,15 @@
         <activity
             android:name=".study.StudyDetailActivity"
             android:exported="false" />
+        <activity
+            android:name=".study.StudySearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.StudySearchListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".study.StudyCreateActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
