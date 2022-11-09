@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -52,34 +53,87 @@
             app:srcCompat="@drawable/search" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="54dp"
-        android:layout_height="24dp"
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/category_on_custom"
         android:fontFamily="@font/psemibold"
-        android:outlineProvider="none"
+        android:gravity="center"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="9dp"
         android:text="디자인"
         android:textColor="@color/white"
-        android:textSize="10dp"
+        android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="64dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="10dp"
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/category_off_custom"
         android:fontFamily="@font/psemibold"
-        android:outlineProvider="none"
+        android:gravity="center"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="9dp"
         android:text="오프라인"
         android:textColor="@color/maincolor"
-        android:textSize="10dp"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/category_off_custom"
+        android:fontFamily="@font/psemibold"
+        android:gravity="center"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="9dp"
+        android:text="오프라인"
+        android:textColor="@color/maincolor"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/category_off_custom"
+        android:fontFamily="@font/psemibold"
+        android:gravity="center"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="9dp"
+        android:text="온라인"
+        android:textColor="@color/maincolor"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/category_off_custom"
+        android:fontFamily="@font/psemibold"
+        android:gravity="center"
+        android:paddingHorizontal="18dp"
+        android:paddingVertical="9dp"
+        android:text="사이드 프로젝트"
+        android:textColor="@color/maincolor"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 
