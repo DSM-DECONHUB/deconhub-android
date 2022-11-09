@@ -52,6 +52,15 @@
         <activity
             android:name=".study.StudyCreateActivity"
             android:exported="false" />
+        <activity
+            android:name=".chat.ChatDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chat.ChatFriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".chat.ChatAddFriendsActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

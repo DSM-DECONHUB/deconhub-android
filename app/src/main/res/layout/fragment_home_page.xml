@@ -20,18 +20,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/Search_icon"
+        android:id="@+id/searchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="4dp"
         android:background="@null"
-        app:layout_constraintEnd_toStartOf="@+id/Bell_icon"
+        app:layout_constraintEnd_toStartOf="@+id/notificationButton"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/search" />
 
     <ImageButton
-        android:id="@+id/Bell_icon"
+        android:id="@+id/notificationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
@@ -49,7 +49,7 @@
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Search_icon"
+        app:layout_constraintTop_toBottomOf="@+id/searchButton"
         app:mcv_selectionColor="@color/maincolor"
         app:mcv_showOtherDates="all"
         tools:ignore="MissingConstraints" />

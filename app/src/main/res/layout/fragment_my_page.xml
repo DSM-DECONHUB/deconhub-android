@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
     <Button
-        android:id="@+id/enterContestButton"
+        android:id="@+id/myContestButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="40dp"
@@ -80,7 +80,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterContestButton" />
+        app:layout_constraintTop_toBottomOf="@+id/myContestButton" />
 
     <Button
         android:id="@+id/setNewPasswordButton"
@@ -101,7 +101,7 @@
         app:layout_constraintTop_toBottomOf="@+id/settingButton" />
 
     <Button
-        android:id="@+id/회원탈퇴"
+        android:id="@+id/leaveButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="40dp"

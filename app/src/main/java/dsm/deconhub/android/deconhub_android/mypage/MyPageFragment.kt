@@ -7,9 +7,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
+import android.widget.LinearLayout
 import dsm.deconhub.android.deconhub_android.R
 import dsm.deconhub.android.deconhub_android.loginsign.LoginActivity
-
+import dsm.deconhub.android.deconhub_android.study.StudyDetailActivity
 
 class MyPageFragment : Fragment() {
 
@@ -19,14 +21,31 @@ class MyPageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_my_page, null)
-        val logoutButton = view.findViewById<Button>(R.id.logout)
+        val myContestButton = view.findViewById<Button>(R.id.myContestButton)
+        val settingButton = view.findViewById<Button>(R.id.settingButton)
+        val setNewPasswordButton = view.findViewById<Button>(R.id.setNewPasswordButton)
+        val leaveButton = view.findViewById<Button>(R.id.leaveButton)
 
-        logoutButton.setOnClickListener(
+        myContestButton.setOnClickListener(
             ({
-                val intent = Intent(context, LoginActivity::class.java)
-                startActivity(intent)
-                activity?.finish()
-            }))
-            return view
+            })
+        )
+
+        settingButton.setOnClickListener(
+            ({
+            })
+        )
+
+        setNewPasswordButton.setOnClickListener(
+            ({
+            })
+        )
+
+        leaveButton.setOnClickListener(
+            ({
+            })
+        )
+
+        return view
     }
 }

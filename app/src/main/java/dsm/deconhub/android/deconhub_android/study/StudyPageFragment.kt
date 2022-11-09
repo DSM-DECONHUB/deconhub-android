@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.LinearLayout
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import dsm.deconhub.android.deconhub_android.R
 
 class StudyPageFragment : Fragment() {
@@ -20,6 +21,7 @@ class StudyPageFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_study_page, null)
         val studyDetailButton = view.findViewById<LinearLayout>(R.id.studyDetail)
         val searchButton = view.findViewById<ImageButton>(R.id.searchButton)
+        val createStudyButton = view.findViewById<FloatingActionButton>(R.id.createStudyButton)
 
         studyDetailButton.setOnClickListener(
             ({
@@ -32,6 +34,14 @@ class StudyPageFragment : Fragment() {
         searchButton.setOnClickListener(
             ({
                 val intent = Intent(context, StudySearchActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
+            })
+        )
+
+        createStudyButton.setOnClickListener(
+            ({
+                val intent = Intent(context, StudyCreateActivity::class.java)
                 startActivity(intent)
                 activity?.finish()
             })
