@@ -10,7 +10,7 @@ import dsm.deconhub.android.deconhub_android.R
 class StudyCreateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_study_search)
+        setContentView(R.layout.activity_study_create)
 
         val backButton = findViewById<ImageButton>(R.id.backButton)
         backButton.setOnClickListener {
@@ -19,8 +19,5 @@ class StudyCreateActivity : AppCompatActivity() {
             startActivity(back)
         }
 
-        val searchButton = findViewById<ImageButton>(R.id.imageButton2)
-        searchButton.setOnClickListener {
-        }
     }
 }
