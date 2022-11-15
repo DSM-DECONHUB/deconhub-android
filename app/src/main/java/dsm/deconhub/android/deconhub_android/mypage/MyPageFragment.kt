@@ -10,6 +10,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import dsm.deconhub.android.deconhub_android.R
+import dsm.deconhub.android.deconhub_android.chat.ChatDetailActivity
 import dsm.deconhub.android.deconhub_android.loginsign.LoginActivity
 import dsm.deconhub.android.deconhub_android.study.StudyDetailActivity
 
@@ -43,6 +44,9 @@ class MyPageFragment : Fragment() {
 
         leaveButton.setOnClickListener(
             ({
+                val intent = Intent(context, LoginActivity::class.java)
+                startActivity(intent)
+                activity?.finish()
             })
         )
 

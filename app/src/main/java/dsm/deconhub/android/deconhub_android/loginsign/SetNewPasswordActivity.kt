@@ -5,13 +5,12 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import dsm.deconhub.android.deconhub_android.MainActivity
 import dsm.deconhub.android.deconhub_android.R
 
 class SetNewPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_setnewpassword)
+        setContentView(R.layout.activity_password_setnew)
 
         val backButton = findViewById<ImageButton>(R.id.backButton)
         backButton.setOnClickListener {

@@ -10,7 +10,7 @@ import dsm.deconhub.android.deconhub_android.R
 class FindPasswordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_findpassword)
+        setContentView(R.layout.activity_password_find)
 
         val backButton = findViewById<ImageButton>(R.id.backButton)
         backButton.setOnClickListener {

@@ -6,7 +6,7 @@ import android.view.MenuItem
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationBarView
 import dsm.deconhub.android.deconhub_android.chat.ChatPageFragment
-import dsm.deconhub.android.deconhub_android.home.HomePageFragment
+import dsm.deconhub.android.deconhub_android.contest.ContestPageFragment
 import dsm.deconhub.android.deconhub_android.mypage.MyPageFragment
 import dsm.deconhub.android.deconhub_android.study.StudyPageFragment
 
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.homeFragment ->{
-                val fragment = HomePageFragment()
+                val fragment = ContestPageFragment()
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.bottom_container,fragment)
                     // view_main이 보여지는 화면에 fragment를 보여줘라
