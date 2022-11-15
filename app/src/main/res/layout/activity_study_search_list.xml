@@ -82,11 +82,9 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
-
                     android:layout_marginBottom="10dp"
                     android:layout_weight="0"
-                    android:background="@color/contour"
-                    tools:src="@tools:sample/avatars" />
+                    android:background="@drawable/image_background" />
 
                 <LinearLayout
                     android:layout_width="0dp"

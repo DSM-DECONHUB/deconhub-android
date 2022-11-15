@@ -51,9 +51,8 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
         android:background="@drawable/mypage_element"
         android:fontFamily="@font/psemibold"
         android:gravity="center_vertical"
@@ -69,9 +68,8 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
         android:background="@drawable/mypage_element"
         android:fontFamily="@font/psemibold"
         android:gravity="center_vertical"
@@ -87,9 +85,8 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
         android:background="@drawable/mypage_element"
         android:fontFamily="@font/psemibold"
         android:gravity="center_vertical"
@@ -101,13 +98,29 @@
         app:layout_constraintTop_toBottomOf="@+id/settingButton" />
 
     <Button
+        android:id="@+id/logoutButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mypage_element"
+        android:fontFamily="@font/psemibold"
+        android:gravity="center_vertical"
+        android:text="로그아웃"
+        android:textColor="@color/error"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setNewPasswordButton" />
+
+    <Button
         android:id="@+id/leaveButton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="30dp"
         android:background="@drawable/mypage_element"
         android:fontFamily="@font/psemibold"
         android:gravity="center_vertical"
@@ -115,7 +128,6 @@
         android:textColor="@color/error"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/setNewPasswordButton" />
+        app:layout_constraintTop_toBottomOf="@+id/logoutButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

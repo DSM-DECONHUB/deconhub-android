@@ -60,11 +60,9 @@
                     android:layout_height="60dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
-
                     android:layout_marginBottom="10dp"
                     android:layout_weight="0"
-                    android:background="@color/contour"
-                    tools:src="@tools:sample/avatars" />
+                    android:background="@drawable/image_background" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -252,4 +250,14 @@
         </LinearLayout>
     </ScrollView>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/createStudyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        app:backgroundTint="@color/maincolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/pencil" />
 </androidx.constraintlayout.widget.ConstraintLayout>
