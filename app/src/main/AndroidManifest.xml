@@ -61,6 +61,27 @@
         <activity
             android:name=".chat.ChatAddFriendsActivity"
             android:exported="false" />
+        <activity
+            android:name=".contest.ContestCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".contest.ContestDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".contest.ContestQuestionCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".contest.ContestQuestionDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".contest.ContestQuestionListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".contest.ContestSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".contest.ContestSearchListActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
