@@ -1,5 +1,6 @@
 package dsm.deconhub.android.deconhub_android
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
 
         //첫 프래그먼트 화면은 home fragment로
         bottomNavigationView.selectedItemId = R.id.homeFragment
+
+
     }
 
     //Implement member

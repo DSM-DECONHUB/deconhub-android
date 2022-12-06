@@ -84,7 +84,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/psemibold"
-                            android:text="스터디 이름"
+                            android:text="디자인 스터디"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -104,7 +104,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="9dp"
                             android:fontFamily="@font/psemibold"
-                            android:text="13"
+                            android:text="4"
                             android:textColor="@color/gray2"
                             android:textSize="12sp" />
                     </LinearLayout>
@@ -114,7 +114,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:fontFamily="@font/psemibold"
-                        android:text="스터디 소개"
+                        android:text="디자인에 대해서 공부하는 스터디 입니다."
                         android:textColor="@color/gray2"
                         android:textSize="12sp" />
 
@@ -123,141 +123,349 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:fontFamily="@font/psemibold"
-                        android:text="스터디 날짜"
+                        android:text="2022.10.09"
                         android:textColor="@color/gray2"
                         android:textSize="10sp" />
                 </LinearLayout>
             </LinearLayout>
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/chatDetailButton1"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="#00ff00"
-                android:gravity="center"
-                android:text="#00ff00" />
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#0000ff"
-                android:gravity="center"
-                android:text="#0000ff" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#ff0000"
-                android:gravity="center"
-                android:text="#ff0000" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/image_background" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#00ff00"
-                android:gravity="center"
-                android:text="#00ff00" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#0000ff"
-                android:gravity="center"
-                android:text="#0000ff" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="horizontal">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#ff0000"
-                android:gravity="center"
-                android:text="#ff0000" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/psemibold"
+                            android:text="프론트 스터디"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#00ff00"
-                android:gravity="center"
-                android:text="#00ff00" />
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#0000ff"
-                android:gravity="center"
-                android:text="#0000ff" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#ff0000"
-                android:gravity="center"
-                android:text="#ff0000" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/user_gray" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#00ff00"
-                android:gravity="center"
-                android:text="#00ff00" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:fontFamily="@font/psemibold"
+                            android:text="4"
+                            android:textColor="@color/gray2"
+                            android:textSize="12sp" />
+                    </LinearLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#0000ff"
-                android:gravity="center"
-                android:text="#0000ff" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/psemibold"
+                        android:text="프론트에 대해서 공부하는 스터디 입니다."
+                        android:textColor="@color/gray2"
+                        android:textSize="12sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#ff0000"
-                android:gravity="center"
-                android:text="#ff0000" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/psemibold"
+                        android:text="2022.02.08"
+                        android:textColor="@color/gray2"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/chatDetailButton2"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="#00ff00"
-                android:gravity="center"
-                android:text="#00ff00" />
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#0000ff"
-                android:gravity="center"
-                android:text="#0000ff" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#ff0000"
-                android:gravity="center"
-                android:text="#ff0000" />
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/image_background" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:background="#00ff00"
-                android:gravity="center"
-                android:text="#00ff00" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-            <TextView
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/psemibold"
+                            android:text="백엔드 스터디"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/user_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:fontFamily="@font/psemibold"
+                            android:text="4"
+                            android:textColor="@color/gray2"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/psemibold"
+                        android:text="백엔드에 대해서 공부하는 스터디 입니다."
+                        android:textColor="@color/gray2"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/psemibold"
+                        android:text="2022.03.10"
+                        android:textColor="@color/gray2"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/chatDetailButton3"
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:background="#0000ff"
-                android:gravity="center"
-                android:text="#0000ff" />
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/image_background" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/psemibold"
+                            android:text="안드로이드 스터디"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/user_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:fontFamily="@font/psemibold"
+                            android:text="4"
+                            android:textColor="@color/gray2"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/psemibold"
+                        android:text="안드로이드에 대해서 공부하는 스터디 입니다."
+                        android:textColor="@color/gray2"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/psemibold"
+                        android:text="2022.09.16"
+                        android:textColor="@color/gray2"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chatDetailButton4"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/image_background" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/psemibold"
+                            android:text="IOS 스터디"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/user_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="9dp"
+                            android:fontFamily="@font/psemibold"
+                            android:text="4"
+                            android:textColor="@color/gray2"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/psemibold"
+                        android:text="IOS에 대해서 공부하는 스터디 입니다."
+                        android:textColor="@color/gray2"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/psemibold"
+                        android:text="2022.05.05"
+                        android:textColor="@color/gray2"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/createStudyButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp"
-        app:backgroundTint="@color/maincolor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/pencil" />
 </androidx.constraintlayout.widget.ConstraintLayout>
