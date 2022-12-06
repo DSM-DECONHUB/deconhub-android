@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView9"
+    <ImageButton
+        android:id="@+id/backButtonContestCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="22dp"
+        android:background="@color/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
@@ -24,19 +25,20 @@
         android:text="대회 만들기"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView23"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintEnd_toStartOf="@+id/finishButtonContesteCreate"
+        app:layout_constraintStart_toEndOf="@+id/backButtonContestCreate"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/finishButtonContesteCreate"
+        android:layout_width="28dp"
+        android:layout_height="19dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="30dp"
+        android:background="@color/back"
         android:fontFamily="@font/pregular"
-        android:text="다음"
-        android:textColor="@color/gray2"
+        android:text="완료"
+        android:textColor="@color/maincolor"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,10 +51,11 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/pregular"
         android:text="제목"
-        android:textColor="@color/gray2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        app:layout_constraintTop_toBottomOf="@+id/backButtonContestCreate" />
 
     <TextView
         android:id="@+id/textView26"
@@ -62,7 +65,8 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/pregular"
         android:text="사진"
-        android:textColor="@color/gray2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView25" />
@@ -75,7 +79,8 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/pregular"
         android:text="한 줄 소개"
-        android:textColor="@color/gray2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
@@ -88,7 +93,8 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/pregular"
         android:text="기간"
-        android:textColor="@color/gray2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView27" />
@@ -101,7 +107,8 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/pregular"
         android:text="후원사"
-        android:textColor="@color/gray2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
@@ -114,7 +121,8 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/pregular"
         android:text="참가조건"
-        android:textColor="@color/gray2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
@@ -127,7 +135,8 @@
         android:layout_marginTop="30dp"
         android:fontFamily="@font/pregular"
         android:text="참가방법"
-        android:textColor="@color/gray2"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray2"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
