@@ -7,7 +7,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/backButtonContestDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -17,7 +17,7 @@
         app:srcCompat="@drawable/back" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/questionContestDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
@@ -32,7 +32,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="360dp"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@id/finishButtonContestDetail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -286,7 +286,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/finishButtonContestDetail"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
         android:layout_height="32dp"
