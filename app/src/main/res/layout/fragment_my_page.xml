@@ -21,30 +21,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/accountIdMy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:fontFamily="@font/psemibold"
-        android:text="장석연"
+        android:hint="장석연"
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mypage_title" />
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/emailMy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/psemibold"
-        android:text="jangseokyeon1110@gmail.com"
+        android:hint="jangseokyeon1110@gmail.com"
         android:textColor="@color/gray2"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/accountIdMy" />
 
     <Button
         android:id="@+id/myContestButton"
@@ -61,7 +61,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/emailMy" />
 
     <Button
         android:id="@+id/settingButton"
