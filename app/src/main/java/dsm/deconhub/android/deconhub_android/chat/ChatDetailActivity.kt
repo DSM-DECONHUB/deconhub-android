@@ -19,9 +19,9 @@ class ChatDetailActivity : AppCompatActivity() {
 
         val backButton = findViewById<ImageButton>(R.id.backButton)
         backButton.setOnClickListener {
-            val back = Intent(this, MainActivity::class.java)
-            back.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            startActivity(back)
+            val connect = Intent(this, MainActivity::class.java)
+            connect.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(connect)
         }
 
         val moreButton = findViewById<ImageButton>(R.id.moreButton)
