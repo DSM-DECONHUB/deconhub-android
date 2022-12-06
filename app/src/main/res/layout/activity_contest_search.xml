@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/backButton"
+        android:id="@+id/backButtonContestSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
@@ -27,7 +27,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/backButton">
+        app:layout_constraintTop_toBottomOf="@+id/backButtonContestSearch">
 
         <EditText
             android:id="@+id/editText"
@@ -45,7 +45,7 @@
             android:textSize="14sp" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/searchButtonContestSearch"
             android:layout_width="40dp"
             android:layout_height="match_parent"
             android:layout_weight="0"
