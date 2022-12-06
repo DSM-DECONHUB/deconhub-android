@@ -1,32 +1,39 @@
 package dsm.deconhub.android.deconhub_android.loginsign
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.Toast
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import dsm.deconhub.android.deconhub_android.R
-import dsm.deconhub.android.deconhub_android.data.Login
-import dsm.deconhub.android.deconhub_android.data.LoginService
-import dsm.deconhub.android.deconhub_android.data.ServerApi.retrofit
-import retrofit2.Callback
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import dsm.deconhub.android.deconhub_android.data.RequestSignup
+import dsm.deconhub.android.deconhub_android.data.RequestToServer
+import kotlinx.android.synthetic.main.activity_sign.*
 
 class SignActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign)
 
-        val backButton = findViewById<ImageButton>(R.id.backButton)
-        backButton.setOnClickListener {
-            onBackPressed()
+        val requestToServer = RequestToServer
+        signupButton.setOnClickListener {
+            Log.d(
+                "id, email, pw, valid",
+                "\nid ${accountIdSign.text.toString()} \nemail ${emailSign.text.toString()} \npw ${passwordSign.text.toString()} \nvalid ${passwordValidSign.text.toString()}"
+            )
+
+            requestToServer.service.requestSignup(
+                RequestSignup(
+                    accountIdSign.text.toString(),
+                    emailSign.text.toString(),
+                    passwordSign.text.toString(),
+                    passwordValidSign.text.toString()
+                )
+            )
+            finish()
         }
 
-        val signupButton = findViewById<Button>(R.id.signupButton)
-        signupButton.setOnClickListener {
+
+        backButton.setOnClickListener {
+            onBackPressed()
         }
     }
 }
