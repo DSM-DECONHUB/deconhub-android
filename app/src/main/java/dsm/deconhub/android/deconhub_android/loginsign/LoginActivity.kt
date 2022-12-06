@@ -15,19 +15,18 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        var id = accountIdLogin.text.toString()
-        var pw = passwordLogin.text.toString()
-
         val requestToServer = RequestToServer
 
         loginButton.setOnClickListener {
-            Log.d("id, pw", "id $id, pw $pw")
+            Log.d(
+                "id, pw",
+                "\nid ${accountIdLogin.text.toString()} \npw ${passwordLogin.text.toString()}"
+            )
             requestToServer.service.requestLogin(
                 RequestLogin(accountIdLogin.text.toString(), passwordLogin.text.toString())
             ).enqueue(object : Callback<ResponseLogin> {
