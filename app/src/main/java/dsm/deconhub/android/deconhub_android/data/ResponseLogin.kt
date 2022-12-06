@@ -1,10 +1,10 @@
 package dsm.deconhub.android.deconhub_android.data
 
 data class ResponseLogin(
-    val data : SomeData?
+    val data: Data?
 )
 
-data class SomeData(
-    val accessToken : String,
-    val refreshToken : String
+data class Data(
+    val accessToken: String,
+    val refreshToken: String
 )
