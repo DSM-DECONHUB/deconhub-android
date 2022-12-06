@@ -34,7 +34,7 @@ class ChatPageFragment : Fragment() {
 
         friendsButton.setOnClickListener(
             ({
-                val intent = Intent(context, StudySearchActivity::class.java)
+                val intent = Intent(context, ChatFriendsActivity::class.java)
                 startActivity(intent)
                 activity?.finish()
             })
